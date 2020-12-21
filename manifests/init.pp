@@ -26,8 +26,6 @@ class impala (
 ) inherits ::impala::params {
   include ::stdlib
 
-  validate_string($alternatives)
-
   if $impala::parameters and has_key($impala::parameters, 'catalog') {
     $catalog_parameters = $impala::parameters['catalog']
   } else {
