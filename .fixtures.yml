@@ -1,7 +1,10 @@
 fixtures:
   repositories:
     stdlib: "https://github.com/puppetlabs/puppetlabs-stdlib.git"
-    alternatives: "git://github.com/puppet-community/puppet-alternatives"
+    alternatives:
+      repo: "https://github.com/voxpupuli/puppet-alternatives"
+      # for tests with puppet < 4
+      ref: "v1.0.1"
     hadoop_lib: "https://github.com/valtri/cesnet-hadoop_lib"
   symlinks:
     impala: "#{source_dir}"
